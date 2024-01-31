@@ -1,0 +1,167 @@
+body {
+    background-color: #86c8f4;
+}
+
+h1 {
+    color: rgb(0, 0, 0);
+}
+
+h2 {
+    color: black;
+}
+
+.heading {
+    margin-top: 50px;
+    margin-left: 100px;
+}
+
+.main-Head {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-left: 300px;
+    margin-right: 300px;
+    border-radius: 20px;
+}
+
+.main-Head > h1 {
+    color: rgb(0, 0, 0);
+}
+
+.container {
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 180px;
+    padding: 20px;
+    border: 1px solid black;
+    background: linear-gradient(to right,#0f1035,#365486,#4fbeda,#365486,#0f1035);
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: rgba(0,0,0,0.4)0px 2px 4px,rgpa(0,0,0,0.3)0px 7px 13px -3px,rgpa(0,0,0,0.2)0px -3px 0px inset;
+}
+
+.container .time {
+    position: relative;
+    width: calc(100px - 30px);
+    height: calc(100px - 30px);
+    float: left;
+    justify-content: center;
+    left: 469px;
+    margin: 15px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 12px;
+}
+
+.colon {
+    position: relative;
+    width: 30px;
+    height: 70px;
+    float: left;
+    left: 469px;
+    top: 37px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 7px;
+    text-align: center;
+    padding-top: 15px;
+    font-weight: bolder;
+    font-size: 24px;
+}
+
+#time-name {
+    color: black;
+    font-size: smaller;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.controls {
+    position: relative;
+    float: left;
+    left: 32%;
+    font-size: 25px;
+    bottom: 10px;
+}
+
+.control-buttons {
+    border: 2px solid blue;
+    border-radius: 10px;
+    transition: background-color 0.3s, color 0.3s;
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+.control-buttons:hover {
+    animation-name: fadeIn;
+    animation-duration: 0.3s;
+    color: aliceblue;
+    background-color: white;
+}
+
+.control-buttons:hover {
+    background-color: lightblue;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+#start:hover,
+#pause:hover,
+#lap:hover,
+#reset:hover,
+#clear:hover {
+    background-color: rgb(153, 4, 228);
+}
+
+.control-buttons:active {
+    transform: scale(0.98);
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
+
+#mainContent {
+    position: absolute;
+    top: 400px;
+    left: 565px;
+}
+
+.LapInfo {
+    border: 1px solid black;
+    padding: 10px 20px;
+    background-color: #365486;
+    font-size: 30px;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 60px;
+    margin-top: 30px;
+}
+
+.lapNum {
+    float: left;
+    width: 65px;
+}
+
+.lap-NumVal {
+    float: left;
+}
+
+.lapTime {
+    float: right;
+    padding-top: 4px;
+    padding-left: 115px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
